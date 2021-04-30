@@ -27,6 +27,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -371,6 +372,191 @@ main{
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
-    padding-top: 60px;
+    padding-top: 64px;   
+}
+
+.main-plans-container{
+   background-color: var(--off-white);
+   width: 100%;
+   min-width: 320px;
+   height: auto;
+   text-align: center;
+   padding-bottom: 70px;
+}
+
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity ;
+}
+
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+  .plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
+
+.plans-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 192px;
+    max-width: 300px;
+    min-height: 250px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px #5959491E;
+    margin: 50px 15px 0;
+
+}
+
+.plans-title{
+    width: 90%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.plans-title h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--warm-black);
+    line-height: 2.6rem;
+    padding-top: 50px;
+}
+
+.plans-title p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #757575;
+    line-height: 1.8rem;
+    margin-top: 30px;
+}
+
+
+.plan-card--message{
+    position:absolute;
     
+    border-radius: 8px;
+    height: 31px;
+    width: 101px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.452rem;
+    color: var(--just-white);
+    padding: 8px;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recomendado{
+    background-color: var(--bitcoin-orange);
+}
+
+.especial{
+    background-color: var(--secondary-blue);
+}
+
+.basic{
+    background-color:#7AEB59;
+}
+
+.plan-card--title{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 800;
+    color: #000000;
+    padding-top: 31px;
+    padding-bottom: 8px;
+}
+
+.plan-card--price{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2rem;
+    font-weight:bold;
+    line-height: 6.293rem;
+    color: #000000;
+}
+
+.plan-card--price span{
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translate(-14px, -12px);
+}
+
+.plan-card--saving{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight:500;
+    line-height: 1.452rem;
+    color: #757575;
+}
+
+.plan-card--ca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 151px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 15px 15px;
+    background-color: var(--off-white);
+    border: 2px #F7931A solid;
+    margin: 0 auto;
+
+    color: var(--warm-black);
+    line-height: 1.823rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 16px;
+}
+
+.button-recomendado{
+    border: 2px #F7931A solid;
+}
+
+.button-especial{
+    border: 2px var(--secondary-blue) solid;
+}
+
+.button-basic{
+    border: 2px #7AEB59 solid;
+}
+
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/icons/arrow-right\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-especial span{
+    background-image: url(/assets/icons/arrow-right_blue.svg);
+}
+
+.button-recomendado span{
+    background-image: url(/assets/icons/arrow-right_orange.svg);
+}
+
+.button-basic span{
+    background-image: url(/assets/icons/arrow-right_green.svg);
+}
+
+.footer{
+    background-color: var(--bitcoin-orange);
+    height: 150px;
+    width: 100%;
 }
