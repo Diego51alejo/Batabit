@@ -395,7 +395,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url(/assets/img/bitcoinbaby2x.jpg);
+    background-image: url(/assets/img/bitcoinbaby.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -623,4 +623,19 @@ main{
 
 .redes-container a{
     text-decoration: none;
+}
+
+.logo-footer img{
+    width: 60px;
+    height: 60px;
+}
+
+.creditos{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    background-color: var(--warm-black);
+    color: var(--just-white);
 }
