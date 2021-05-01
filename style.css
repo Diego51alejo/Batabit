@@ -118,6 +118,7 @@ main{
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    
 }
 
 
@@ -156,13 +157,65 @@ main{
     color: #757575;
 }
 
-
-.main-currency-table, .main-commissions-table{
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 340px;
+.main-tables-container{
+    display: flex;
     margin: 0 auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity ;
+    
+    min-width: 282px;
+}
+
+.main-tables-container::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+
+.main-tables-container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
+.table{
+    display: grid;
+    height: 290px;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background-color: var(--just-white);
+    margin-bottom: 30px;   
+    min-width: 292px;
+}
+
+.table div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2px solid var(--off-white);
+    padding: auto 11px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #B5B0AC;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    
+}
+
+/* .main-commissions-table,.main-currency-table{
+    scroll-snap-align: center;
+    
+    min-width: 292px;
+    height: 370px;
+    margin: 0 5px 0 ;
+} */
+
+
+.main-currency-table{
+    padding: 0 10px;
+}
+
+.main-commissions-table{
+    padding-right: 10px;
 }
 
 .main-tables-container .currency-table--title{
@@ -173,7 +226,7 @@ main{
     color: #FF9536;
     font-size: 1.8rem;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .main-tables-container .commissions-table--title{
@@ -184,28 +237,10 @@ main{
     color: var(--secondary-blue);
     font-size: 1.8rem;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
-.table{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    background-color: var(--just-white);
-    margin-bottom: 30px;
-}
 
-.table div{
-    
-    border: 0.2px solid var(--off-white);
-    padding: 12px 11px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #B5B0AC;
-    font-family: 'Inter', sans-serif;
-
-}
 
 .table .valor{
     color: #757575;
@@ -372,7 +407,10 @@ main{
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
-    padding-top: 64px;   
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    height: 100%;
 }
 
 .main-plans-container{
@@ -390,6 +428,8 @@ main{
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity ;
+    
+    
 }
 
 .plans-container--slider::-webkit-scrollbar {
@@ -410,7 +450,7 @@ main{
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0px 4px 8px #5959491E;
-    margin: 50px 15px 0;
+    margin: 50px 5px 0;
 
 }
 
@@ -559,4 +599,28 @@ main{
     background-color: var(--bitcoin-orange);
     height: 150px;
     width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+}
+
+
+.redes-container, .logo-footer{
+    text-align: center;
+    align-self: center;
+}
+
+.redes-container p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    padding-bottom: 8px;
+}
+
+.redes-container a{
+    text-decoration: none;
 }
