@@ -395,7 +395,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url(/assets/img/bitcoinbaby.png);
+    background-image: url(./assets/img/bitcoinbaby.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -577,22 +577,22 @@ main{
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/assets/icons/arrow-right\ 1.svg);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .button-especial span{
-    background-image: url(/assets/icons/arrow-right_blue.svg);
+    background-image: url(./assets/icons/arrow-right_blue.svg);
 }
 
 .button-recomendado span{
-    background-image: url(/assets/icons/arrow-right_orange.svg);
+    background-image: url(./assets/icons/arrow-right_orange.svg);
 }
 
 .button-basic span{
-    background-image: url(/assets/icons/arrow-right_green.svg);
+    background-image: url(./assets/icons/arrow-right_green.svg);
 }
 
 .footer{
