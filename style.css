@@ -274,7 +274,7 @@ ul.slider li:target {
 .tables-options li{
     list-style: none;
     padding:  10px 8px;
-    width: 100px;
+    width: 120px;
     border-radius: 8px;
     
 }
@@ -291,8 +291,12 @@ ul.slider li:target {
     text-decoration: none;
     color: var(--black);
     font-size: 1.5rem;
+    padding:  10px 8px;
 }
 
+.tables-options li:active{
+    border: solid 1px #bababa;
+}
 
 .table .valor{
     color: #757575;
