@@ -157,14 +157,40 @@ main{
     color: #757575;
 }
 
-.main-tables-container{
-    display: flex;
-    margin: 0 auto;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity ;
+/* .main-tables-container{
     
-    min-width: 282px;
+    margin: 0 auto;
+    min-width: 320px;
+} */
+
+
+.slider, .slider li{
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+}
+
+ul.slider{
+    position: relative;
+    min-height: 430px;
+    width: 288px;
+    margin: 0 auto;
+}
+
+ul.slider li{
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    min-width: 290px;
+    
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
 }
 
 .main-tables-container::-webkit-scrollbar {
@@ -180,11 +206,12 @@ main{
     display: grid;
     height: 290px;
     grid-template-columns: repeat(2, 1fr);
+    
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     background-color: var(--just-white);
     margin-bottom: 30px;   
-    min-width: 292px;
+    
 }
 
 .table div{
@@ -210,20 +237,14 @@ main{
 } */
 
 
-.main-currency-table{
-    padding: 0 10px;
-}
-
-.main-commissions-table{
-    padding-right: 10px;
-}
 
 .main-tables-container .currency-table--title{
     line-height: 2.34rem;
-    margin: 0 auto;
-    padding-bottom: 12px;
+    margin: 8px auto;
+    padding: 8px;
     font-weight: 700;
     color: #FF9536;
+    background-color: var(--soft-orange);
     font-size: 1.8rem;
     display: flex;
     justify-content: center;
@@ -231,15 +252,46 @@ main{
 
 .main-tables-container .commissions-table--title{
     line-height: 2.34rem;
-    margin: 0 auto;
-    padding-bottom: 12px;
+    margin: 8px auto;
+    padding: 8px;
     font-weight: 700;
     color: var(--secondary-blue);
+    background-color: var(--soft-blue);
     font-size: 1.8rem;
     display: flex;
     justify-content: center;
+    align-content: center;
+}
+ 
+/* ATENCION */
+
+.tables-options{
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
 }
 
+.tables-options li{
+    list-style: none;
+    padding:  10px 8px;
+    width: 100px;
+    border-radius: 8px;
+    
+}
+
+.link-currency{
+    background-color: var(--soft-orange);
+}
+
+.link-commissions{
+    background-color: var(--soft-blue);
+}
+
+.tables-options a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.5rem;
+}
 
 
 .table .valor{
